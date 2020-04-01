@@ -1,0 +1,8 @@
+camel:
+  dataformat:
+    json-jackson:
+      disable-features: FAIL_ON_EMPTY_BEANS
+rest-server:
+  component: netty-http
+  host: localhost
+  port: 8081
