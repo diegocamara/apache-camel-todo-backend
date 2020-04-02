@@ -11,7 +11,10 @@ import lombok.Setter;
 @Getter
 @Setter
 public class RestServerConfiguration {
+  private static final String EMPTY = "";
   private String component;
   private int port;
   private String host;
+  private String contextPath;
+  private String url;
 }

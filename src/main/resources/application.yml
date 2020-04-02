@@ -1,8 +1,18 @@
-camel:
-  dataformat:
-    json-jackson:
-      disable-features: FAIL_ON_EMPTY_BEANS
+spring:
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
 rest-server:
   component: netty-http
+  protocol: http
   host: localhost
   port: 8081
+  context-path: /todos
+  url: '${rest-server.protocol}://${rest-server.host}:${rest-server.port}${rest-server.context-path}'
