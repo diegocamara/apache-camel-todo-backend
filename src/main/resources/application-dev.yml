@@ -11,8 +11,7 @@ spring:
     password:
 rest-server:
   component: netty-http
-  protocol: http
-  port: 8080
+  port: ${PORT:8080}
   context-path: /todos
   url: 'http://localhost:${rest-server.port}${rest-server.context-path}'
 

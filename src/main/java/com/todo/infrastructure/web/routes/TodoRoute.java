@@ -10,7 +10,6 @@ import com.todo.infrastructure.web.response.TodoResponse;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.model.rest.RestBindingMode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,13 +27,6 @@ public class TodoRoute extends RouteBuilder {
 
   @Override
   public void configure() throws Exception {
-
-    restConfiguration()
-        .component(restServerConfiguration.getComponent())
-        .port(restServerConfiguration.getPort())
-        .contextPath(restServerConfiguration.getContextPath())
-        .enableCORS(true)
-        .bindingMode(RestBindingMode.auto);
 
     rest()
         .get()

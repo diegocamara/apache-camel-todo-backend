@@ -11,11 +11,6 @@ spring:
     password:
 rest-server:
   component: netty-http
-  protocol: https
-  host: 'spring-todo-backend.herokuapp.com'
   port: ${PORT:8081}
   context-path: /todos
-  url: 'https://spring-todo-backend.herokuapp.com/todos'
-#logging:
-#  level:
-#    root: error
+  url: 'https://spring-todo-backend.herokuapp.com${rest-server.context-path}'
