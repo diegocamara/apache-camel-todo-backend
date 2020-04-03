@@ -12,7 +12,7 @@ spring:
 rest-server:
   component: netty-http
   protocol: http
-  host: localhost
+  host: 'spring-todo-backend.herokuapp.com'
   port: ${PORT:8081}
   context-path: /todos
   url: 'http://spring-todo-backend.herokuapp.com/todos'
