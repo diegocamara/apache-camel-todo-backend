@@ -15,7 +15,7 @@ rest-server:
   host: 'spring-todo-backend.herokuapp.com'
   port: ${PORT:8081}
   context-path: /todos
-  url: 'http://spring-todo-backend.herokuapp.com/todos'
+  url: 'https://spring-todo-backend.herokuapp.com/todos'
 #logging:
 #  level:
 #    root: error

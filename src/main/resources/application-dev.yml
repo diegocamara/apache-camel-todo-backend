@@ -12,10 +12,9 @@ spring:
 rest-server:
   component: netty-http
   protocol: http
-  host: localhost
   port: 8080
   context-path: /todos
-  url: '${rest-server.protocol}://${rest-server.host}:${rest-server.port}${rest-server.context-path}'
+  url: 'http://localhost:${rest-server.port}${rest-server.context-path}'
 
 logging:
   level:
