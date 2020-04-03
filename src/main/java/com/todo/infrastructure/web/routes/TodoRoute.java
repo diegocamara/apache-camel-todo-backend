@@ -31,7 +31,7 @@ public class TodoRoute extends RouteBuilder {
 
     restConfiguration()
         .component(restServerConfiguration.getComponent())
-        .host(restServerConfiguration.getHost())
+        //        .host(restServerConfiguration.getHost())
         .port(restServerConfiguration.getPort())
         .contextPath(restServerConfiguration.getContextPath())
         .enableCORS(true)
