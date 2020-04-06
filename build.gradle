@@ -31,6 +31,10 @@ dependencies {
     }
 }
 
+bootJar {
+    archiveName "todo-backend.${archiveExtension.get()}"
+}
+
 test {
     useJUnitPlatform()
 }
