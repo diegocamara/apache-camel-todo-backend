@@ -1,6 +1,6 @@
 # How it works
 
-This application uses apache camel web support to provide a Todo REST API to contribute to [Todo-Backend](https://www.todobackend.com/).
+This application uses apache camel web support to provide a Todo REST API based on [Todo-Backend](https://www.todobackend.com/).
 
 Some modules used in this app:
 * [Spring](https://spring.io/) to perform dependency injection
